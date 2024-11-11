@@ -1,0 +1,151 @@
+/* الخط العام */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+}
+
+/* الخلفية */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('2024.jpg'); /* ضع هنا رابط أو اسم الصورة الخلفية */
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: -1;
+}
+
+/* شريط التنقل */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    padding: 8px 16px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+
+/* الحاوية الرئيسية */
+.container {
+    text-align:center;
+    background-color: rgba(78, 78, 78, 0); /* لون أبيض شفاف */
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 20px; /* لإبعاد المحتوى عن شريط التنقل */
+}
+.container1 {
+    text-align:right;
+    background-color: rgba(11, 102, 29, 0.8); /* لون أبيض شفاف */
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 20px; /* لإبعاد المحتوى عن شريط التنقل */
+
+}
+.container2 {
+    
+    text-align:left;
+    background-color: rgba(11, 102, 29, 0.8); /* لون أبيض شفاف */
+    padding: 20px;
+    border-radius: 10px;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: 20px; /* لإبعاد المحتوى عن شريط التنقل */
+    
+}
+
+/* الاسم */
+h1 {
+    font-size: 48px;
+    color: #000;
+    margin-bottom: 30px;
+    animation: slideDown 1.5s ease-in-out;
+}
+h3 {
+    font-size: 20px;
+    align-content: center;
+    color: #000;
+    margin-bottom: 7px;
+    animation: slideDown 3s ease-in-out;
+}
+
+/* القائمة */
+.course-list ul {
+    list-style:none;
+    padding: 0;
+}
+
+.course-list li {
+    margin: 15px 0;
+}
+
+.course-list a {
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+/* تأثير الحركة على الروابط */
+.course-list a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* الحركات */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
